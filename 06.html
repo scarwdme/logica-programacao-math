@@ -1,0 +1,24 @@
+<!-- Arredondamentos em Diferentes Contextos
+Peça que o usuário insira um número decimal e mostre o resultado de:
+• Arredondamento tradicional (Math.round())
+• Arredondamento para cima (Math.ceil())
+• Arredondamento para baixo (Math.floor())
+• Truncamento da parte decimal (Math.trunc())
+Explique em que situações cada tipo de arredondamento pode ser ́util. -->
+
+<script>
+  let entrada = prompt("Digite um número decimal:");
+  let numero = Number(entrada);
+
+  let arredondadoTradicional = Math.round(numero);
+  let arredondadoCima = Math.ceil(numero);
+  let arredondadoBaixo = Math.floor(numero);
+  let truncado = Math.trunc(numero);
+
+  console.log("Número digitado:", numero);
+  console.log("Arredondamento tradicional (Math.round):", arredondadoTradicional);
+
+  console.log("Arredondamento para cima (Math.ceil):", arredondadoCima);
+  console.log("Arredondamento para baixo (Math.floor):", arredondadoBaixo);
+  console.log("Truncamento da parte decimal (Math.trunc):", truncado);
+</script>

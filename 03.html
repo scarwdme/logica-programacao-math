@@ -1,0 +1,17 @@
+<!-- Calculadora de Potência Personalizada | Faça um programa que permita ao usuário
+digitar a base e o expoente e retorne o resultado da potência usando Math.pow(). 
+Garanta que o programa trate expoentes negativos corretamente. -->
+
+<script>
+  let entradaBase = prompt("Digite a base:");
+  let base = Number(entradaBase);
+
+  let entradaExpoente = prompt("Digite o expoente:");
+  let expoente = Number(entradaExpoente);
+
+  let resultado = Math.pow(base, expoente);
+
+  resultado = Math.round(resultado * 10000) / 10000;
+
+  console.log(base + " elevado a " + expoente + " é: " + resultado);
+</script>

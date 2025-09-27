@@ -1,0 +1,18 @@
+<!-- Area do Círculo | Desenvolva uma funcão que calcule a área de um círculo dado o raio
+fornecido pelo usuário. Utilize as constantes e funções Math.PI e Math.pow()
+para calcular a ́area com a fórrmula A = πr2 -->
+
+<script>
+  function calcularAreaCirculo(raio) {
+    return Math.PI * Math.pow(raio, 2);
+  }
+
+  let entrada = prompt("Digite o raio do círculo:");
+  let raio = Number(entrada);
+
+  let area = calcularAreaCirculo(raio);
+
+  let areaArredondada = Math.round(area * 100) / 100;
+
+  console.log("A área do círculo é: " + areaArredondada);
+</script>

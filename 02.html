@@ -1,0 +1,14 @@
+<!-- Raiz Cúbica de um Número | Crie um programa que receba um número do usuário 
+e calcule a raiz cúbica utilizando Math.cbrt(). Apresente o resultado 
+arredondado para duas casas decimais. -->
+
+<script>
+  let entrada = prompt("Digite um número:");
+  let numero = Number(entrada);
+
+  let raizCubica = Math.cbrt(numero);
+
+  let raizArredondada = Math.round(raizCubica * 100) / 100;
+
+  console.log("A raiz cúbica de " + numero + " é: " + raizArredondada);
+</script>

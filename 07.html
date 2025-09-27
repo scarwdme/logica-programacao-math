@@ -1,0 +1,20 @@
+<!-- Classificação de Número por Sinal | Crie uma função que receba um número
+e informe se ele é positivo, negativo ou zero, usando Math.sign(). -->
+
+<script>
+  function classificarNumero(numero) {
+    let sinal = Math.sign(numero);
+    if (sinal === 1) {
+      return "Positivo";
+    } else if (sinal === -1) {
+      return "Negativo";
+    } else {
+      return "Zero";
+    }
+  }
+
+  let entrada = prompt("Digite um número:");
+  let numero = Number(entrada);
+
+  console.log("O número " + numero + " é:", classificarNumero(numero));
+</script>

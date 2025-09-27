@@ -1,0 +1,15 @@
+<!-- Temperatura Kelvin com Precis ̃ao Simples | Faça um programa que converta uma temperatura em 
+graus Celsius para Kelvin e utilize Math.fround() para exibir o resultado com precisão
+simples (32 bits). -->
+
+<script>
+  let entrada = prompt("Digite a temperatura em °C:");
+  let celsius = Number(entrada);
+
+  let kelvin = celsius + 273.15;
+
+  let kelvinSimples = Math.fround(kelvin);
+
+  console.log(
+    celsius + "°C correspondem a " + kelvinSimples + " K (precisão simples)");
+</script>
